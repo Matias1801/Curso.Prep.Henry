@@ -1,0 +1,69 @@
+-Variables: es una forma de almacenar el valor de algo como: una frase, palabra, etc. Que mas tarde se va a usar.
+ Para poder crear una variable se utilizan las declaraciones: var, let, const. (la mas usada es -var-).
+ Para declarar una variable se utiliza: var (espacio) el nombre de la variable, ejemplo: edad, y luego se coloca el "=" para señalar el valor de la variable.
+ Las declaraciones de variables(var, let, const) se consideran una palabra clave o Keywords y no se pueden utilizar como nombres de variables.
+ El valor de una variable en el caso de una palabra va entre "comillas". 
+ Ejemplo: 
+          var nombre = " Pedro ";
+          let apellido = " Perez ";  
+          const altura = 1,99;
+ var: es la forma mas utilizada, ya que se utiliza en la versión de javascript actual la es5.
+ let: es una palabra clave utilizada en la versión que le sigue la es6, es muy parecida a la recién mencionada. Su principal diferencia esta en la creación
+ de un " nivel de scope ". ( scope= es el ambiente donde valores y expresiones o variables pueden ser vistas y referenciadas).
+ const: es una variable que se mantiene constante, al igual que el caso anterior, se utiliza para una versión de javascript mas avanzada.  
+ 
+ console.log: nos permite escribir lo que queramos en la consola, cuando colocamos lo que queremos expresar entre paréntesis. Ej:
+ console.log();
+ 
+-Strings: es texto o bloques de texto que se le colocan comillas (dobles o simples). Ej: "Matias". 
+ 
+-Funciones: es un conjunto de objetos que realizan una tarea o calculan un valor. Una función toma una entrada y devuelve una salida que tiene una relación lógica con la entrada. Para usar una función tenes que definirla en algún lugar del ámbito.
+ Tres formas de funciones: 
+  function mifunción (){}
+  var otrafunción = función(){}
+  var yotra = () => {}
+ 
+ Ejemplo: 1)
+              Function mifunción (){} 
+
+ Descripción de función: iniciamos con la palabra -function- esto indica  que se trata de una función, lo que sigue es el nombre de la función en este caso -mifunción-, después siguen los paréntesis (donde iría el argumento, mas adelanate hablamos de esto) y los corchetes donde se escribe el código a ejecutar.
+ Argumentos: son el valor del nombre de la función. 
+ Ejemplpo: 
+           function minombre (nombre) {
+           console.log("hola" + nombre);
+           
+            }
+           minombre(matias);
+
+ Return: significa devolver y para eso se utiliza, por ejemplo:
+
+           function hacersuma (v,y) {
+           var suma = v + y;
+           return suma;
+           }
+          hacersuma(1,4); // 5
+
+-Declaraciones: son instrucciones y estan separadas por punto y coma ";".
+  
+  Declaración "if": es una expresión condicional, es decir, que es una expresión que nos permite ejecutar una sentencia determinada si una condición es verdadera, en caso de que la condición sea falsa, se ejecutara otra sentencia (a travez de "else").
+  Ej: 
+          function aabbcc(xxzz){
+          if (condición);
+          sentencia1;
+          } else {
+          sentencia2;
+          }
+          aabbcc(10) // sentencia1 o sentencia2 
+
+  Ej(2):  function mayoredad (edad) {
+          if (edad>=18);  
+          return true;
+          } else {
+          return false ;
+          }
+          mayoredad(18) // true
+
+-Valores booleanos ("true" , "false"): las expresiones booleanas son expresiones que evaluán si es verdadero o falso.
+ Normalmente se utilizan en sentencias de "if".
+
+     
