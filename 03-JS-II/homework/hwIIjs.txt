@@ -1,0 +1,56 @@
+Conceptos de js.II.
+ -"for".
+ -"&&".
+ -"||".
+ -"!".
+
+-"for": 
+ Bucle "for", valúa expresiones una y otra vez, una variable mas, una expresión condicional, mas una expresión de actualización o incremento (x++) de variable.
+ Ejecuta una serie de instrucciones de código repetidas, hasta que la expresión condicional deje de cumplirse o sea falsa.
+
+ for ([expresión inicial]; [expresión condicional]; [expresión de actualización o incremento/decremento de variable]) {
+   instrucción;
+  }
+
+Ejemplo: 
+ for ( var i=3; i<10; i++; ) {
+ console.log(i); 
+ }
+
+-"&&": asignación "AND" lógico. Es un operador de asignación compuesto.
+ Evalúa ambas expresiones:
+ Si ambas son verdaderas devuelve true.
+ Si una es falsa devuelve false.
+ Si ambas son falsas devuelve false.
+ Ej:
+   if (4===4 && 5===5) // true
+    Ambas expresiones son verdaderas, por lo tanto && (AND) devolvera true y el código se ejecutará.
+   if (2===321 && 5===5) // false 
+    Una expresión es falsa, asi que &&(AND) devolvera false y el código no se ejecutará.
+   if (45===4 && 2===36) // false
+    Ambas expresiones son falsas, por lo tanto && (AND) devolvera false y el código no se ejecutará.
+
+-"||": "o", operador lógico (OR).
+ Devuelve true si una o ambas declaraciones son verdaderas. 
+ Devuelve false si una o ambas declaraciones son falsas.
+ Ej:
+    if (4===44 || 1>12 ) // false 
+    Ambas declaraciones son falsas, por lo tanto devolvera false y el código no se ejecutará.
+
+    if (12===12 || 1===2) // true
+    Una declaración es falsa, pero la otra es true, por lo tanto devolvera true y el código se ejecutará.
+    if (7===7 || 5<6) // true
+    Ambas  declaraciones son true, por lo tanto devolvera true y el código se ejecutará.
+
+-"!":  (NOT), operador lógico.
+ Devuelve el valor opuesto al que se le pasaría normalmente. Ej:
+
+ if ( ! ( 5===6 ) ) // true. ( normalmente debería devolver false ya que 5 no es igual a 6. Pero a travez del NOT obtenemos el opuesto)
+ 
+ if ( ! ( 4 < 5 ) ) // false. ( normalmente debería devolver true ya que 4 es mas pequeño que 5. Pero a travez del NOT obtenemos el opuesto )
+
+
+
+
+
+
