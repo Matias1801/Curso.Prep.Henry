@@ -1,0 +1,60 @@
+jsIV:
+
+-Objetos: contiene datos sobre un elemento en particular. Los datos se organizan a travez de pares clave/valor("key:value") que son como variables, es decir, tenenemos la clave donde se igresa el nombre de la propiedad, luego los " : " en vez de "=" y finalmente el valor que puede ser cualquier tipo de dato(cadena, booleano, matriz, número, función u otro objeto). En el caso de que el valor sea una función se denomina método. Estos pares clave:valor se separan a travez de una coma. Además se marcan con {}.
+ 
+-Propiedades:() pares "clave:valor". La clave(key) es el identificador y puede haber una con ese nombre, en el caso del valor pueden ser elementos de datos, como: strings o cadenas, booleans y arreglos. Importante: varias claves pueden tener el mismo valor. 
+    Sintaxis=
+    "key:value" / "clave/valor" 
+        nombre: LUIS,
+
+
+-Métodos: Cuando el valor de una clave es una función. La función le permite hacer algo con esos datos.
+    saludo: function  (){
+	console.log("hola soy " + this.nombre);
+	}
+
+EJ:
+var luis= {
+	nombre: "LUIS",
+	edad: "25",
+	deportes:["futbol", "basquet"]
+	saludo: function  (){
+	console.log("hola soy " + this.nombre);
+	}
+} 
+ 
+ -bucles for in.. ( for in loop ): no se puede aplicar el mismo bucle "for" que se le aplica a las matrices, ya que los objetos no poseen indices númericos como las matrices, así que se utiliza otro bucle "for" que es un poco distinto.
+  
+  -- for (var [propiedad] in [nombre de objeto] ){
+    
+     } --
+  Ejemplo: 
+  for(var nombre in luis){
+  console.log(nombre);
+  console.log(luis[nombre])
+  }
+  //nombre
+  //"LUIS"
+  //edad
+  //"25"
+  //deportes
+  //["futbol", "basquet"]
+  //saludo
+  //function
+
+ --Notación por puntos (Dot notation) y Notación por corchetes (Bracket notation), son formas distintas de referirse a la propiedad o método de un objeto, sirven para acceder o asignar un valor.	 
+  
+  -Notación por puntos: se coloca el nombre del objeto (para identificar el objeto), luego un punto y el nombre del elemento o propiedad al que se quiere acceder. O método en caso de que el valor sea una función.    
+ luis.nombre; 
+ // "LUIS"
+ luis.deportes[1];
+ // "basquet"                                            
+ 
+  -Notación por corchetes: esta forma es similar a la que se utiliza en los arreglos, la diferencia es que en vez de usar un número de índice para seleccionar un elemento, se usa el nombre de la propiedad o método (se estaría colocando el nombre de la clave/key o indicador). 
+ luis["edad"]; 
+ // "25"
+
+
+ 
+
+

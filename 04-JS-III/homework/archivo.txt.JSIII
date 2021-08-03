@@ -1,0 +1,24 @@
+archivo de texto/jsIII/ 
+Los arrays contienen multiples valores almacenados, son listas de cosas (estas listas van entre corchetes "[]"), en las que se puede acceder a cada elemento de forma individual, también recorrerlos com un bucle(ejcuta una serie de instrucciones de código repetidas) y hacer la misma operación a cada elemento.    
+ La longitud de la lista puede variar en cualquier momento ya que se puede añadir o eliminar elementos. Como también el tipo de elmentos varía ya que puede contener strings, booleans, numbers, otros arrays/arreglos, variables, objetos y cualquier combinación de elementos.
+
+ Ej: 
+  let frutas= ["manzana", "banana", "pera"]; 
+
+  se puede mencionar un elemento particular dentro del arreglo/array:
+  let frutas=[0]; // "manzana" 
+  
+  let frutas=[1]; // "banana"
+  
+  Los arrays pueden estar contituidos por varios tipos de datos:
+  let elementosvarios= [ "casa", 2, ["uno","dos","tres"], var pais= "Argentina" ];
+
+  Eliminar y añadir elementos al arreglo/array:
+  Añade elemento al final(push).
+  frutas.push("uva"); // ["manzana", "banana", "pera", "uva"]
+  Elimina elemento al final.
+  frutas.pop(); // ["manzana", "banana", "pera"]
+  Añade al inicio.
+  frutas.unshift("hola"); // ["hola", "manzana", "banana", "pera"]  
+  Elimina al inicio.
+  frutas.shift(); // ["manzana", "banana", "pera"]
